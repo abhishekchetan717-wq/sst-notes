@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 10 MP Board SST Notes by Abhishek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container nav">
+            <h1>📚 SST Notes by Abhishek</h1>
+            <button id="themeToggle" class="theme-btn">🌙 Dark Mode</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <p class="tag">Class 10 • MP Board</p>
+                <h2>Social Science Notes</h2>
+                <p>Easy-to-read notes for History, Geography, Civics and Economics.</p>
+                <input id="searchInput" type="search" placeholder="🔎 Search chapters or subjects...">
+            </div>
+        </section>
+
+        <section class="container section">
+            <h2>Subjects</h2>
+            <div class="subject-grid">
+                <button class="subject-card" data-subject="History">
+                    <span>📜</span><strong>History</strong><small>Important chapters & notes</small>
+                </button>
+                <button class="subject-card" data-subject="Geography">
+                    <span>🌍</span><strong>Geography</strong><small>Maps, resources & notes</small>
+                </button>
+                <button class="subject-card" data-subject="Civics">
+                    <span>🏛️</span><strong>Civics</strong><small>Democracy & government</small>
+                </button>
+                <button class="subject-card" data-subject="Economics">
+                    <span>💰</span><strong>Economics</strong><small>Money, development & economy</small>
+                </button>
+            </div>
+        </section>
+
+        <section class="container section">
+            <h2>Chapters</h2>
+            <div id="chapterGrid" class="chapter-grid">
+                <article class="chapter-card" data-subject="History">
+                    <span class="badge">History</span>
+                    <h3>Chapter 1 — The Rise of Nationalism</h3>
+                    <p>Quick revision notes and important points.</p>
+                    <button class="notes-btn" data-title="History — Chapter 1"
+                        data-notes="Add your Chapter 1 notes here. You can also replace this text with your own notes.">
+                        View Notes
+                    </button>
+                </article>
+
+                <article class="chapter-card" data-subject="Geography">
+                    <span class="badge">Geography</span>
+                    <h3>Chapter 1 — Resources and Development</h3>
+                    <p>Key concepts for quick revision.</p>
+                    <button class="notes-btn" data-title="Geography — Chapter 1"
+                        data-notes="Add your Geography Chapter 1 notes here.">
+                        View Notes
+                    </button>
+                </article>
+
+                <article class="chapter-card" data-subject="Civics">
+                    <span class="badge">Civics</span>
+                    <h3>Chapter 1 — Power Sharing</h3>
+                    <p>Important concepts and questions.</p>
+                    <button class="notes-btn" data-title="Civics — Chapter 1"
+                        data-notes="Add your Civics Chapter 1 notes here.">
+                        View Notes
+                    </button>
+                </article>
+
+                <article class="chapter-card" data-subject="Economics">
+                    <span class="badge">Economics</span>
+                    <h3>Chapter 1 — Development</h3>
+                    <p>Important definitions and revision points.</p>
+                    <button class="notes-btn" data-title="Economics — Chapter 1"
+                        data-notes="Add your Economics Chapter 1 notes here.">
+                        View Notes
+                    </button>
+                </article>
+            </div>
+            <p id="noResults" class="no-results" hidden>No matching chapter found.</p>
+        </section>
+
+        <section class="container section">
+            <h2>⭐ Important Questions</h2>
+            <div class="questions">
+                <details>
+                    <summary>How should I use these notes?</summary>
+                    <p>Read the chapter notes first, then revise the important questions before your test.</p>
+                </details>
+                <details>
+                    <summary>Can I add my own notes images?</summary>
+                    <p>Yes. Create an <code>images</code> folder in this repository and add your note photos there. Then use an image tag such as <code>&lt;img src="images/history-1.jpg"&gt;</code>.</p>
+                </details>
+                <details>
+                    <summary>Can I add more chapters?</summary>
+                    <p>Yes. Copy a chapter card in the HTML and change its subject, title and notes.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 SST Notes by Abhishek • Class 10 MP Board</p>
+    </footer>
+
+    <div id="notesModal" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <button id="closeModal" class="close-btn" aria-label="Close">×</button>
+            <h2 id="modalTitle"></h2>
+            <div id="modalNotes"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
